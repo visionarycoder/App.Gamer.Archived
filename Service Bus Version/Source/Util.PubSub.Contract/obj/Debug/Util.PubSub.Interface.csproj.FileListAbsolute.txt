@@ -1,0 +1,2 @@
+C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub.Contract\obj\Debug\Util.PubSub.Interface.csproj.CoreCompileInputs.cache
+C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub.Contract\obj\Debug\Util.PubSub.Interface.csproj.AssemblyReference.cache

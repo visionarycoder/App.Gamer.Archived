@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HIBIF3YoUWCiUFjQJ4Z9xuSoELWqirJTeLiqjZ7yE6Kuik2Yh3vwNS11sNSd10CeJ2HwVVs08fl0/ECV/vCVHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Access.Tile.Interface\\Access.Tile.Interface.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.dependencyvalidation.analyzers\\0.11.0\\microsoft.dependencyvalidation.analyzers.0.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

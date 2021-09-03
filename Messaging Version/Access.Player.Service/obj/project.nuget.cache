@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mR/Z8LbGGt+OcxYKRq8t0ByV04MsAS/hbHJk138V2UPD5LBIeiR3aY54y0MC9u2fija3hbYL08XKdFUoq17xYg==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Access.Player.Service\\Access.Player.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.dependencyvalidation.analyzers\\0.11.0\\microsoft.dependencyvalidation.analyzers.0.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

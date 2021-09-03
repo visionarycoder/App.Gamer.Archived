@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jbyqhq5ujLlbpl6EmINBUYNhwgr3Kj4BA1udujO7XCKBm0+qqkbbeRFhBspp3edyXCV6iaYjF8GdMdr9WE716w==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Manager.Turn.Service\\Manager.Turn.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.dependencyvalidation.analyzers\\0.11.0\\microsoft.dependencyvalidation.analyzers.0.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}
