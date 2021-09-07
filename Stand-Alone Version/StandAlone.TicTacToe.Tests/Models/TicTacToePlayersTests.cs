@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TicTacToe.Models;
 
 namespace StandAlone.TicTacToe.Tests.Models
 {

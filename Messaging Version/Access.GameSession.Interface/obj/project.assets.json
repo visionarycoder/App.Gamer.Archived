@@ -57,6 +57,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Microsoft.DependencyValidation.Analyzers >= 0.11.0",
       "Util.ServiceMessaging >= 1.0.0"
     ]
   },
@@ -110,6 +111,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.DependencyValidation.Analyzers": {
+            "target": "Package",
+            "version": "[0.11.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

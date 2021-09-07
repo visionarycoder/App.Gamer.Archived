@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TicTacToe.Models;
 
 namespace StandAlone.TicTacToe.Tests.Models
 {
@@ -10,8 +9,8 @@ namespace StandAlone.TicTacToe.Tests.Models
 		[TestMethod]
 		public void CellTest()
 		{
-			var cell = new Cell("A1");
-			Assert.IsInstanceOfType(cell, typeof(Cell));		
+			var cell = new Tile("A1");
+			Assert.IsInstanceOfType(cell, typeof(Tile));		
 			Assert.IsNotNull(cell);
 
 		}
@@ -21,7 +20,7 @@ namespace StandAlone.TicTacToe.Tests.Models
 		{
 
 			var expected = "A1";
-			var cell = new Cell(expected);
+			var cell = new Tile(expected);
 			var actual = cell.Address;
 			Assert.AreEqual(expected, actual);
 
@@ -32,7 +31,7 @@ namespace StandAlone.TicTacToe.Tests.Models
 		{
 
 			var expected = "A1";
-			var cell = new Cell(expected);
+			var cell = new Tile(expected);
 			Assert.IsTrue(cell.IsEmpty);
 
 		}
@@ -42,7 +41,7 @@ namespace StandAlone.TicTacToe.Tests.Models
 		{
 
 			var expected = "A Game Piece";
-			var cell = new Cell(expected) {GamePiece = expected};
+			var cell = new Tile(expected) {GamePiece = expected};
 			var actual = cell.GamePiece;
 			Assert.AreEqual(expected, actual);
 

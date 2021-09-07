@@ -1,4 +1,4 @@
-﻿using TicTacToe.Managers;
+﻿using TicTacToe.Manager;
 
 namespace TicTacToe
 {

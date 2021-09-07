@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zdaIXltRK0gARSkzYfM9B5BwTX2V55R0CWS0S8wLpvrY1dzz9BUI4AZmxvClof5hpE2RWctONiaL1Z640Sj18w==",
+  "dgSpecHash": "Bo/k/TTyu3StlbrAs0StuSBw88xcnZ0ctH1OR3DkF7Fol36W/OQTum7N+CozZQfaTPGVEn0Kj0nHqDlPdyTZ2A==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Manager.GamePlay.Interface\\Manager.GamePlay.Interface.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.dependencyvalidation.analyzers\\0.11.0\\microsoft.dependencyvalidation.analyzers.0.11.0.nupkg.sha512"
+  ],
   "logs": []
 }

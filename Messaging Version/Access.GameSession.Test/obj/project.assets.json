@@ -1736,6 +1736,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.DependencyValidation.Analyzers": "0.11.0",
           "Util.ServiceMessaging": "1.0.0"
         },
         "compile": {
@@ -1750,6 +1751,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Access.GameSession.Interface": "1.0.0",
+          "Microsoft.DependencyValidation.Analyzers": "0.11.0",
           "Util.Caching": "1.0.0"
         },
         "compile": {
@@ -6407,6 +6409,7 @@
       "Access.GameSession.Service >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
+      "Microsoft.DependencyValidation.Analyzers >= 0.11.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "coverlet.collector >= 3.0.2"
     ]
@@ -6469,6 +6472,10 @@
           "MSTest.TestFramework": {
             "target": "Package",
             "version": "[2.2.3, )"
+          },
+          "Microsoft.DependencyValidation.Analyzers": {
+            "target": "Package",
+            "version": "[0.11.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

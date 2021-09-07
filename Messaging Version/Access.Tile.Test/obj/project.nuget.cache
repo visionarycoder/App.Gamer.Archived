@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "F4i3uScOzs4WKlzxv41iJsZuP0+J65FZh11pWecOD4W32ZLbzWEpisUJ6CBB7qfhLrXbnaaZ0JvDETbc2YhCGA==",
+  "dgSpecHash": "LrLv65I8R5aImawXewuyAsEM1QUmQnnJvvCEN3yl7Gv4Kut1G3gYhR3tBnwuNxPIClI3mSXdt3tDoa9gbBqenA==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Access.Tile.Test\\Access.Tile.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IJones\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\IJones\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
     "C:\\Users\\IJones\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.dependencyvalidation.analyzers\\0.11.0\\microsoft.dependencyvalidation.analyzers.0.11.0.nupkg.sha512",
     "C:\\Users\\IJones\\.nuget\\packages\\microsoft.net.test.sdk\\16.9.4\\microsoft.net.test.sdk.16.9.4.nupkg.sha512",
     "C:\\Users\\IJones\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\IJones\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

@@ -9,6 +9,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.DependencyValidation.Analyzers": "0.11.0",
           "Util.ServiceMessaging": "1.0.0"
         },
         "compile": {
@@ -75,7 +76,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Access.GameDefinition.Interface >= 1.0.0"
+      "Access.GameDefinition.Interface >= 1.0.0",
+      "Microsoft.DependencyValidation.Analyzers >= 0.11.0"
     ]
   },
   "packageFolders": {
@@ -128,6 +130,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.DependencyValidation.Analyzers": {
+            "target": "Package",
+            "version": "[0.11.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

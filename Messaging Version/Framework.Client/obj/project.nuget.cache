@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lwqmgL2DBYRoL/29eYSRY+dIRD1uYxfNlnnApFNGISB98Ohagk5dgV/h966Ho9O5uh1Fh0emRvPhJ6Zxi/31Qw==",
+  "dgSpecHash": "5tR3jJoizjVEUTr55BNwbSYd/OtHzH1eT9HaTBIOpF4JTiKVfvf9vNirwdZqNdxHnZ0swVwyMfkyqryzBygluQ==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Framework.Client\\Framework.Client.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.dependencyvalidation.analyzers\\0.11.0\\microsoft.dependencyvalidation.analyzers.0.11.0.nupkg.sha512"
+  ],
   "logs": []
 }

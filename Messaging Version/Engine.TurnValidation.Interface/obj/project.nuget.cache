@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1HoB4iGiZfhsO+9kC+PFNdl+xYNmjzJ8ejMNaAy936MyiJJciYiFw+KNSlMU0CaoxRsdzfQdjdue2G4US3+cpg==",
+  "dgSpecHash": "WRNV6moR520pE1rS2AXPz/a/2JT9UNX7ZxB+0a+af1cGdoqdgwAzpJkWG7qR22XSwzk0sbKef+uj9CZwe2ruTQ==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Engine.TurnValidation.Interface\\Engine.TurnValidation.Interface.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.dependencyvalidation.analyzers\\0.11.0\\microsoft.dependencyvalidation.analyzers.0.11.0.nupkg.sha512"
+  ],
   "logs": []
 }
