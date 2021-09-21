@@ -1,9 +1,0 @@
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\bin\Debug\TicTacToe.exe.config
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\bin\Debug\TicTacToe.exe
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\bin\Debug\TicTacToe.pdb
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\bin\Debug\TicTacToe.exe.CodeAnalysisLog.xml
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\bin\Debug\TicTacToe.exe.lastcodeanalysissucceeded
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\obj\Debug\StandAlone.TicTacToe.csproj.AssemblyReference.cache
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\obj\Debug\StandAlone.TicTacToe.csproj.CoreCompileInputs.cache
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\obj\Debug\TicTacToe.exe
-C:\Dev\Visionary Coder\Gamer\Stand-Alone Version\StandAlone.TicTacToe\obj\Debug\TicTacToe.pdb
