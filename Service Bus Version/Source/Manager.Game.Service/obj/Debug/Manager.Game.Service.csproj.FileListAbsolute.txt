@@ -1,2 +1,0 @@
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Manager.Game.Service\obj\Debug\Manager.Game.Service.csproj.AssemblyReference.cache
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Manager.Game.Service\obj\Debug\Manager.Game.Service.csproj.CoreCompileInputs.cache

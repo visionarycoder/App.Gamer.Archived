@@ -1,6 +1,0 @@
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub\bin\Debug\Gamer.Util.PubSub.dll.config
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub\bin\Debug\Gamer.Util.PubSub.dll
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub\bin\Debug\Gamer.Util.PubSub.pdb
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub\obj\Debug\Util.PubSub.csproj.CoreCompileInputs.cache
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub\obj\Debug\Gamer.Util.PubSub.dll
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub\obj\Debug\Gamer.Util.PubSub.pdb

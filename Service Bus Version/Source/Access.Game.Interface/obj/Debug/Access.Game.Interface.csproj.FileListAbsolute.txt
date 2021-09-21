@@ -1,5 +1,0 @@
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Access.Game.Interface\bin\Debug\Gamer.Access.Game.Interface.dll
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Access.Game.Interface\bin\Debug\Gamer.Access.Game.Interface.pdb
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Access.Game.Interface\obj\Debug\Access.Game.Interface.csproj.CoreCompileInputs.cache
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Access.Game.Interface\obj\Debug\Gamer.Access.Game.Interface.dll
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Access.Game.Interface\obj\Debug\Gamer.Access.Game.Interface.pdb
