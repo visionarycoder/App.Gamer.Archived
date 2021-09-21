@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Tile = Gamer.Engine.GamePlay.Interface.Tile;
 
 namespace Gamer.Engine.GamePlay.Service.Factory
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gamer.Engine.GamePlay.Service
+namespace Gamer.Engine.GameBoard.Interface
 {
 
 	public class Tile

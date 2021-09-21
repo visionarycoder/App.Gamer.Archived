@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Gamer.Access.GameDefinition.Interface;
@@ -11,6 +12,7 @@ using Gamer.Engine.GamePlay.Service.Factory;
 using Gamer.Engine.GamePlay.Service.Helper;
 using GameSession = Gamer.Engine.GamePlay.Interface.GameSession;
 using Player = Gamer.Engine.GamePlay.Interface.Player;
+using Tile = Gamer.Engine.GamePlay.Interface.Tile;
 
 namespace Gamer.Engine.GamePlay.Service
 {
@@ -18,7 +20,7 @@ namespace Gamer.Engine.GamePlay.Service
 	public class GamePlayEngine : IGamePlayEngine
 	{
 
-		private readonly Random random;
+		private readonly AutoPlayer autoPlayer = new AutoPlayer();
 
 		private readonly IGameDefinitionAccess gameDefinitionAccess;
 		private readonly IGameSessionAccess gameSessionAccess;
@@ -33,15 +35,12 @@ namespace Gamer.Engine.GamePlay.Service
 			this.playerAccess = playerAccess;
 			this.tileAccess = tileAccess;
 
-			random = new Random();
-
 		}
 
 		public async Task<bool> IsPlayable(Guid gameSessionId)
 		{
 
-			var dtos = await tileAccess.FindTiles(gameSessionId);
-			var tiles = dtos.Convert();
+			var tiles = await tileAccess.FindTiles(gameSessionId);
 			if (tiles.All(i => i.IsEmpty))
 				return true;  // New Game
 
@@ -49,7 +48,7 @@ namespace Gamer.Engine.GamePlay.Service
 				return false;  // No empty spaces.
 
 			// Check all possible vectors
-			var dictionary = tiles.ToDictionary(tile => tile.Address, tile => tile);
+			var dictionary = tiles.ToDictionary(tile => tile.Address, tile => tile.Convert());
 
 			// A Col
 			if (IsWinningVector(dictionary["A1"], dictionary["A2"], dictionary["A3"]))
@@ -234,9 +233,7 @@ namespace Gamer.Engine.GamePlay.Service
 			var gameSession = await gameSessionAccess.GetGameSession(gameSessionId);
 			var currentPlayer = await playerAccess.GetPlayer(gameSession.CurrentPlayerId);
 			var tiles = await tileAccess.FindTiles(gameSessionId);
-			var emptyTiles = tiles.Where(i => i.IsEmpty).ToList();
-			var idx = random.Next(0, emptyTiles.Count - 1);
-			var tile = tiles[idx];
+			var tile = autoPlayer.PlayTurn(tiles);
 			tile.PlayerId = currentPlayer.Id;
 			await tileAccess.UpdateTile(tile);
 			await IncrementPlayer(gameSessionId);
@@ -253,6 +250,11 @@ namespace Gamer.Engine.GamePlay.Service
 			address = address.ToUpperInvariant();
 			var tiles = await tileAccess.FindTiles(gameSessionId);
 			var tile = tiles.FirstOrDefault(i => i.Address == address);
+			if (tile == null)
+			{
+				Trace.WriteLine("Error!");
+				return;
+			}
 			tile.PlayerId = playerId;
 			await tileAccess.UpdateTile(tile);
 			await IncrementPlayer(gameSessionId);

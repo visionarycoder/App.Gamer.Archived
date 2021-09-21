@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Gamer.Access.GameDefinition.Interface;
 using Gamer.Access.GameDefinition.Service;
 using Gamer.Access.GameSession.Interface;

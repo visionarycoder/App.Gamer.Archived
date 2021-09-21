@@ -4,7 +4,6 @@ using System.Data;
 using System.Threading.Tasks;
 using Gamer.Framework.Helpers;
 using Gamer.Manager.Game.Interface;
-using Gamer.Manager.Game.Service;
 
 namespace Gamer.Client.ConsoleApp
 {

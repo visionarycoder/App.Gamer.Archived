@@ -12,7 +12,6 @@ using Gamer.Engine.Validation.Interface;
 using Gamer.Framework;
 using Gamer.Manager.Game.Interface;
 using Gamer.Manager.Game.Service.Helpers;
-using Player = Gamer.Access.Player.Interface.Player;
 
 namespace Gamer.Manager.Game.Service
 {
@@ -115,115 +114,6 @@ namespace Gamer.Manager.Game.Service
 			return player.Convert();
 
 		}
-
-		//public async Task Play(Guid gameDefinition)
-		//{
-
-		//StartGame();
-
-		//// How many players?
-		//var idx = OFFSET;
-		//var items = AllowedNumberOfPlayers.Select(i => i.ToString()).ToList();
-		//Console.WriteLine("How many players? ");
-		//foreach (var item in items)
-		//    Console.WriteLine($"[{idx++}] {item}");
-
-		//int playerCount;
-		//do
-		//{
-		//    playerCount = ConsoleHelper.GetIntegerInput() - OFFSET;
-		//    if (AllowedNumberOfPlayers.Contains(playerCount))
-		//        break;
-		//} while (true);
-
-		//Console.WriteLine(playerCount + " player(s) selected.");
-		//SetPlayerCount(playerCount);
-
-		//while (await gamePlayEngine.IsPlayable())
-		//{
-
-		//    var board = boardAccess.GetBoard()
-
-		//    Console.WriteLine(board);
-		//    Console.WriteLine(players.CurrentPlayer.Name);
-
-		//    if (players.CurrentPlayer.IsMachine)
-		//    {
-		//        var address = gamePlayEngine.AutoPlay();
-		//        ApplyTurn(address);
-		//    }
-		//    else
-		//    {
-		//        var address = "";
-		//        while (string.IsNullOrWhiteSpace(address))
-		//            address = RequestCellAddress();
-		//        ApplyTurn(address);
-		//    }
-
-		//    players.IncrementPlayer();
-
-		//}
-
-		//EndGame();
-		//ConsoleHelper.ShowExit();
-		//}
-
-		//private void ApplyTurn(string address)
-		//{
-
-		//    var cell = board.Cells.FirstOrDefault(i => i.Address == address);
-
-		//    if (cell == null)
-		//        throw new ArgumentException("Address does not exist");
-
-		//    if (!string.IsNullOrWhiteSpace(cell.GamePiece))
-		//        throw new ArgumentException("This cell has already been played.");
-
-		//    cell.GamePiece = players.CurrentPlayer.GamePiece;
-
-		//}
-
-		//private string RequestCellAddress()
-		//{
-
-		//    do
-		//    {
-		//        Console.WriteLine("Please take a turn.");
-		//        var address = Console.ReadLine()?.Trim().ToUpperInvariant();
-		//        var validationResult = validationEngine.ValidateUserInput(address);
-		//        if (validationResult == ValidationResult.Success)
-		//        {
-		//            if (gamePlayEngine.IsTileOpen(address))
-		//                return address;
-		//            validationResult = new ValidationResult("Tile has already been played.");
-		//        }
-		//        Console.WriteLine(validationResult.ErrorMessage);
-		//    } while (true);
-
-		//}
-
-		//private void StartGame()
-		//{
-		//    Console.WriteLine("Tic-Tac-Toe");
-		//}
-
-		//private void EndGame()
-		//{
-
-		//    // Show board
-		//    Console.WriteLine(board);
-
-		//    // Declare winner
-		//    var gamePiece = gamePlayEngine.FindWinnerGamePiece();
-		//    var player = players.ByGamePiece(gamePiece);
-		//    if (player == null)
-		//        Console.WriteLine("It's a draw!");
-		//    else
-		//        Console.WriteLine(player.Name + " won!");
-
-		//    Console.WriteLine("Thanks for playing.");
-
-		//}
 
 	}
 

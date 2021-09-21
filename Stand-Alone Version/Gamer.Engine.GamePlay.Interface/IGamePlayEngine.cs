@@ -1,7 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using Gamer.Access.GameSession.Interface;
-using Gamer.Access.Player.Interface;
 
 namespace Gamer.Engine.GamePlay.Interface
 {
