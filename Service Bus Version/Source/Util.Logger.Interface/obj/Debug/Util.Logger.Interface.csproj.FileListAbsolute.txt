@@ -1,1 +1,0 @@
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.Logger.Interface\obj\Debug\Util.Logger.Interface.csproj.CoreCompileInputs.cache

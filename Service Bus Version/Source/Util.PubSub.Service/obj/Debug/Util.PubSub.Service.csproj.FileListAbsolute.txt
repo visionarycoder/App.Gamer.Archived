@@ -1,1 +1,0 @@
-C:\Dev\Visionary Coder\Gamer\Service Bus Version\Source\Util.PubSub.Service\obj\Debug\Util.PubSub.Service.csproj.CoreCompileInputs.cache
