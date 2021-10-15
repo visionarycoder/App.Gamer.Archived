@@ -3,7 +3,6 @@ Gamer - Messaging Version
 Difference between stand-alone and messaging.
 
 Added service messaging to handle all I/O between "services".
-Added database for persistance. 
 
 Theory:
 

@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[GamePiece]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Value] TEXT NOT NULL DEFAULT ''
+)

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "iJ2ssyStJOWbJoNr2E0Jvp7OC+3aGcLn+t/zozM936C08qCaaibrqM4QKkFLX276sER+RW0V3kwJe3MwSNsiTw==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.Tile.Interface\\Gamer.Access.Tile.Interface.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

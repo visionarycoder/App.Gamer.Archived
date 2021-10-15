@@ -1,0 +1,10 @@
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\bin\Debug\Gamer.Database.dacpac
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\bin\Debug\Gamer.Database.dll
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\bin\Debug\Gamer.Database.pdb
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\obj\Debug\Model.xml
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\obj\Debug\refactor.xml
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\obj\Debug\postdeploy.sql
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\obj\Debug\predeploy.sql
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\obj\Debug\Gamer.Database.dll
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\obj\Debug\Gamer.Database.pdb
+C:\Dev\Visionary Coder\Gamer\Messaging Version\Gamer.Database\obj\Debug\Gamer.Database.sqlproj.AssemblyReference.cache

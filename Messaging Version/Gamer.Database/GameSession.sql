@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[GameSession]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY
+)

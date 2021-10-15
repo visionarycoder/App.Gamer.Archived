@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fLQjkwWpBbIoksTKM1DJ6nikpCpk13bjTUnb1HK1dqvDbMvUIOjtESMnHM67S+/cNCWRUHF0WZ885+YhQLjcUg==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Manager.Game.Service\\Gamer.Manager.Game.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\IJones\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

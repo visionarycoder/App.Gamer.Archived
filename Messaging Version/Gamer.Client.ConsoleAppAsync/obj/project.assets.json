@@ -1,0 +1,766 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Microsoft.Extensions.DependencyInjection/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Options/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.10": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Unity.Abstractions.dll": {},
+          "lib/netcoreapp3.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Unity.Abstractions.dll": {},
+          "lib/netcoreapp3.0/Unity.Container.dll": {}
+        }
+      },
+      "Gamer.Access.GameDefinition.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Framework": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Access.GameDefinition.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Access.GameDefinition.Interface.dll": {}
+        }
+      },
+      "Gamer.Access.GameDefinition.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.GameDefinition.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Access.GameDefinition.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Access.GameDefinition.Service.dll": {}
+        }
+      },
+      "Gamer.Access.GameSession.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Framework": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Access.GameSession.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Access.GameSession.Interface.dll": {}
+        }
+      },
+      "Gamer.Access.GameSession.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.GameSession.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Access.GameSession.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Access.GameSession.Service.dll": {}
+        }
+      },
+      "Gamer.Access.Player.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Framework": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Access.Player.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Access.Player.Interface.dll": {}
+        }
+      },
+      "Gamer.Access.Player.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.Player.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Access.Player.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Access.Player.Service.dll": {}
+        }
+      },
+      "Gamer.Access.Tile.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Framework": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Access.Tile.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Access.Tile.Interface.dll": {}
+        }
+      },
+      "Gamer.Access.Tile.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.Tile.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Access.Tile.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Access.Tile.Service.dll": {}
+        }
+      },
+      "Gamer.Engine.GameBoard.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Framework": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Engine.GameBoard.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Engine.GameBoard.Interface.dll": {}
+        }
+      },
+      "Gamer.Engine.GameBoard.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.GameSession.Interface": "1.0.0",
+          "Gamer.Access.Player.Interface": "1.0.0",
+          "Gamer.Access.Tile.Interface": "1.0.0",
+          "Gamer.Engine.GameBoard.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Engine.GameBoard.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Engine.GameBoard.Service.dll": {}
+        }
+      },
+      "Gamer.Engine.GamePlay.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.GameSession.Interface": "1.0.0",
+          "Gamer.Access.Player.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Engine.GamePlay.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Engine.GamePlay.Interface.dll": {}
+        }
+      },
+      "Gamer.Engine.GamePlay.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.GameDefinition.Interface": "1.0.0",
+          "Gamer.Access.Tile.Interface": "1.0.0",
+          "Gamer.Engine.GamePlay.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Engine.GamePlay.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Engine.GamePlay.Service.dll": {}
+        }
+      },
+      "Gamer.Engine.Validation.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Framework": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Engine.Validation.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Engine.Validation.Interface.dll": {}
+        }
+      },
+      "Gamer.Engine.Validation.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.GameSession.Interface": "1.0.0",
+          "Gamer.Access.Tile.Interface": "1.0.0",
+          "Gamer.Engine.Validation.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Engine.Validation.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Engine.Validation.Service.dll": {}
+        }
+      },
+      "Gamer.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Framework.dll": {}
+        }
+      },
+      "Gamer.Manager.Game.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.GameDefinition.Interface": "1.0.0",
+          "Gamer.Access.Player.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Manager.Game.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Manager.Game.Interface.dll": {}
+        }
+      },
+      "Gamer.Manager.Game.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Gamer.Access.GameDefinition.Interface": "1.0.0",
+          "Gamer.Access.GameSession.Interface": "1.0.0",
+          "Gamer.Access.Player.Interface": "1.0.0",
+          "Gamer.Access.Tile.Interface": "1.0.0",
+          "Gamer.Engine.GameBoard.Interface": "1.0.0",
+          "Gamer.Engine.GamePlay.Interface": "1.0.0",
+          "Gamer.Engine.Validation.Interface": "1.0.0",
+          "Gamer.Framework": "1.0.0",
+          "Gamer.Manager.Game.Interface": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gamer.Manager.Game.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gamer.Manager.Game.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "sha512": "Rc2kb/p3Ze6cP6rhFC3PJRdWGbLvSHZc0ev7YlyeU6FmHciDMLrhoVoTUEzKPhN5ZjFgKF1Cf5fOz8mCMIkvpA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging/5.0.0": {
+      "sha512": "MgOwK6tPzB6YNH21wssJcw/2MKwee8b2gI7SllYfn6rvTpIrVvVS5HAjSU2vqSku1fwqRvWP0MdIi14qjd93Aw==",
+      "type": "package",
+      "path": "microsoft.extensions.logging/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.dll",
+        "lib/net461/Microsoft.Extensions.Logging.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Logging.xml",
+        "microsoft.extensions.logging.5.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "sha512": "NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Options/5.0.0": {
+      "sha512": "CBvR92TCJ5uBIdd9/HzDSrxYak+0W/3+yxrNg8Qm6Bmrkh5L+nu6m3WeazQehcZ5q1/6dDA7J5YdQjim0165zg==",
+      "type": "package",
+      "path": "microsoft.extensions.options/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Options.dll",
+        "lib/net461/Microsoft.Extensions.Options.xml",
+        "lib/net5.0/Microsoft.Extensions.Options.dll",
+        "lib/net5.0/Microsoft.Extensions.Options.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
+        "microsoft.extensions.options.5.0.0.nupkg.sha512",
+        "microsoft.extensions.options.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/5.0.0": {
+      "sha512": "cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Primitives.dll",
+        "lib/net461/Microsoft.Extensions.Primitives.xml",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Unity/5.11.10": {
+      "sha512": "B4+Ps3oqI78hJ+dAFsJhPkJT6qycsNExgLbtw7CEHSzKc2ac3YyUR8SHQ+ZyTwld/y5IbDx/aNOHnKE9Em1zWA==",
+      "type": "package",
+      "path": "unity/5.11.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Abstractions.dll",
+        "lib/net40/Unity.Abstractions.pdb",
+        "lib/net40/Unity.Container.dll",
+        "lib/net40/Unity.Container.pdb",
+        "lib/net45/Unity.Abstractions.dll",
+        "lib/net45/Unity.Abstractions.pdb",
+        "lib/net45/Unity.Container.dll",
+        "lib/net45/Unity.Container.pdb",
+        "lib/net46/Unity.Abstractions.dll",
+        "lib/net46/Unity.Abstractions.pdb",
+        "lib/net46/Unity.Container.dll",
+        "lib/net46/Unity.Container.pdb",
+        "lib/net47/Unity.Abstractions.dll",
+        "lib/net47/Unity.Abstractions.pdb",
+        "lib/net47/Unity.Container.dll",
+        "lib/net47/Unity.Container.pdb",
+        "lib/net48/Unity.Abstractions.dll",
+        "lib/net48/Unity.Abstractions.pdb",
+        "lib/net48/Unity.Container.dll",
+        "lib/net48/Unity.Container.pdb",
+        "lib/netcoreapp1.0/Unity.Abstractions.dll",
+        "lib/netcoreapp1.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp1.0/Unity.Container.dll",
+        "lib/netcoreapp1.0/Unity.Container.pdb",
+        "lib/netcoreapp2.0/Unity.Abstractions.dll",
+        "lib/netcoreapp2.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Unity.Container.dll",
+        "lib/netcoreapp2.0/Unity.Container.pdb",
+        "lib/netcoreapp3.0/Unity.Abstractions.dll",
+        "lib/netcoreapp3.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp3.0/Unity.Container.dll",
+        "lib/netcoreapp3.0/Unity.Container.pdb",
+        "lib/netstandard1.0/Unity.Abstractions.dll",
+        "lib/netstandard1.0/Unity.Abstractions.pdb",
+        "lib/netstandard1.0/Unity.Container.dll",
+        "lib/netstandard1.0/Unity.Container.pdb",
+        "lib/netstandard2.0/Unity.Abstractions.dll",
+        "lib/netstandard2.0/Unity.Abstractions.pdb",
+        "lib/netstandard2.0/Unity.Container.dll",
+        "lib/netstandard2.0/Unity.Container.pdb",
+        "unity.5.11.10.nupkg.sha512",
+        "unity.nuspec"
+      ]
+    },
+    "Gamer.Access.GameDefinition.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Access.GameDefinition.Interface/Gamer.Access.GameDefinition.Interface.csproj",
+      "msbuildProject": "../Gamer.Access.GameDefinition.Interface/Gamer.Access.GameDefinition.Interface.csproj"
+    },
+    "Gamer.Access.GameDefinition.Service/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Access.GameDefinition.Service/Gamer.Access.GameDefinition.Service.csproj",
+      "msbuildProject": "../Gamer.Access.GameDefinition.Service/Gamer.Access.GameDefinition.Service.csproj"
+    },
+    "Gamer.Access.GameSession.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Access.GameSession.Interface/Gamer.Access.GameSession.Interface.csproj",
+      "msbuildProject": "../Gamer.Access.GameSession.Interface/Gamer.Access.GameSession.Interface.csproj"
+    },
+    "Gamer.Access.GameSession.Service/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Access.GameSession.Service/Gamer.Access.GameSession.Service.csproj",
+      "msbuildProject": "../Gamer.Access.GameSession.Service/Gamer.Access.GameSession.Service.csproj"
+    },
+    "Gamer.Access.Player.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Access.Player.Interface/Gamer.Access.Player.Interface.csproj",
+      "msbuildProject": "../Gamer.Access.Player.Interface/Gamer.Access.Player.Interface.csproj"
+    },
+    "Gamer.Access.Player.Service/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Access.Player.Service/Gamer.Access.Player.Service.csproj",
+      "msbuildProject": "../Gamer.Access.Player.Service/Gamer.Access.Player.Service.csproj"
+    },
+    "Gamer.Access.Tile.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Access.Tile.Interface/Gamer.Access.Tile.Interface.csproj",
+      "msbuildProject": "../Gamer.Access.Tile.Interface/Gamer.Access.Tile.Interface.csproj"
+    },
+    "Gamer.Access.Tile.Service/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Access.Tile.Service/Gamer.Access.Tile.Service.csproj",
+      "msbuildProject": "../Gamer.Access.Tile.Service/Gamer.Access.Tile.Service.csproj"
+    },
+    "Gamer.Engine.GameBoard.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Engine.GameBoard.Interface/Gamer.Engine.GameBoard.Interface.csproj",
+      "msbuildProject": "../Gamer.Engine.GameBoard.Interface/Gamer.Engine.GameBoard.Interface.csproj"
+    },
+    "Gamer.Engine.GameBoard.Service/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Engine.GameBoard.Service/Gamer.Engine.GameBoard.Service.csproj",
+      "msbuildProject": "../Gamer.Engine.GameBoard.Service/Gamer.Engine.GameBoard.Service.csproj"
+    },
+    "Gamer.Engine.GamePlay.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Engine.GamePlay.Interface/Gamer.Engine.GamePlay.Interface.csproj",
+      "msbuildProject": "../Gamer.Engine.GamePlay.Interface/Gamer.Engine.GamePlay.Interface.csproj"
+    },
+    "Gamer.Engine.GamePlay.Service/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Engine.GamePlay.Service/Gamer.Engine.GamePlay.Service.csproj",
+      "msbuildProject": "../Gamer.Engine.GamePlay.Service/Gamer.Engine.GamePlay.Service.csproj"
+    },
+    "Gamer.Engine.Validation.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Engine.Validation.Interface/Gamer.Engine.Validation.Interface.csproj",
+      "msbuildProject": "../Gamer.Engine.Validation.Interface/Gamer.Engine.Validation.Interface.csproj"
+    },
+    "Gamer.Engine.Validation.Service/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Engine.Validation.Service/Gamer.Engine.Validation.Service.csproj",
+      "msbuildProject": "../Gamer.Engine.Validation.Service/Gamer.Engine.Validation.Service.csproj"
+    },
+    "Gamer.Framework/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Framework/Gamer.Framework.csproj",
+      "msbuildProject": "../Gamer.Framework/Gamer.Framework.csproj"
+    },
+    "Gamer.Manager.Game.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Manager.Game.Interface/Gamer.Manager.Game.Interface.csproj",
+      "msbuildProject": "../Gamer.Manager.Game.Interface/Gamer.Manager.Game.Interface.csproj"
+    },
+    "Gamer.Manager.Game.Service/1.0.0": {
+      "type": "project",
+      "path": "../Gamer.Manager.Game.Service/Gamer.Manager.Game.Service.csproj",
+      "msbuildProject": "../Gamer.Manager.Game.Service/Gamer.Manager.Game.Service.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Gamer.Access.GameDefinition.Interface >= 1.0.0",
+      "Gamer.Access.GameDefinition.Service >= 1.0.0",
+      "Gamer.Access.GameSession.Service >= 1.0.0",
+      "Gamer.Access.Player.Interface >= 1.0.0",
+      "Gamer.Access.Player.Service >= 1.0.0",
+      "Gamer.Access.Tile.Service >= 1.0.0",
+      "Gamer.Engine.GameBoard.Service >= 1.0.0",
+      "Gamer.Engine.GamePlay.Service >= 1.0.0",
+      "Gamer.Engine.Validation.Interface >= 1.0.0",
+      "Gamer.Engine.Validation.Service >= 1.0.0",
+      "Gamer.Manager.Game.Interface >= 1.0.0",
+      "Gamer.Manager.Game.Service >= 1.0.0",
+      "Unity >= 5.11.10"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\IJones\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Client.ConsoleAppAsync\\Gamer.Client.ConsoleAppAsync.csproj",
+      "projectName": "Gamer.Client.ConsoleAppAsync",
+      "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Client.ConsoleAppAsync\\Gamer.Client.ConsoleAppAsync.csproj",
+      "packagesPath": "C:\\Users\\IJones\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Client.ConsoleAppAsync\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\IJones\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.GameDefinition.Interface\\Gamer.Access.GameDefinition.Interface.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.GameDefinition.Interface\\Gamer.Access.GameDefinition.Interface.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.GameDefinition.Service\\Gamer.Access.GameDefinition.Service.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.GameDefinition.Service\\Gamer.Access.GameDefinition.Service.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.GameSession.Service\\Gamer.Access.GameSession.Service.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.GameSession.Service\\Gamer.Access.GameSession.Service.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.Player.Interface\\Gamer.Access.Player.Interface.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.Player.Interface\\Gamer.Access.Player.Interface.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.Player.Service\\Gamer.Access.Player.Service.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.Player.Service\\Gamer.Access.Player.Service.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.Tile.Service\\Gamer.Access.Tile.Service.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Access.Tile.Service\\Gamer.Access.Tile.Service.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Engine.GameBoard.Service\\Gamer.Engine.GameBoard.Service.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Engine.GameBoard.Service\\Gamer.Engine.GameBoard.Service.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Engine.GamePlay.Service\\Gamer.Engine.GamePlay.Service.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Engine.GamePlay.Service\\Gamer.Engine.GamePlay.Service.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Engine.Validation.Interface\\Gamer.Engine.Validation.Interface.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Engine.Validation.Interface\\Gamer.Engine.Validation.Interface.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Engine.Validation.Service\\Gamer.Engine.Validation.Service.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Engine.Validation.Service\\Gamer.Engine.Validation.Service.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Manager.Game.Interface\\Gamer.Manager.Game.Interface.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Manager.Game.Interface\\Gamer.Manager.Game.Interface.csproj"
+            },
+            "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Manager.Game.Service\\Gamer.Manager.Game.Service.csproj": {
+              "projectPath": "C:\\Dev\\Visionary Coder\\Gamer\\Messaging Version\\Gamer.Manager.Game.Service\\Gamer.Manager.Game.Service.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Unity": {
+            "target": "Package",
+            "version": "[5.11.10, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
