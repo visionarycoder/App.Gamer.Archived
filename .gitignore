@@ -42,9 +42,6 @@
 /Stand-Alone Version/Gamer.Manager.Game.Service/bin/Debug/net5.0
 /Stand-Alone Version/Gamer.Manager.Game.Service/obj
 /Stand-Alone Version/.vs/Gamer.StandAlone/v16
-/Archived/Messaging Version/Access.Board.Interface/obj
-/Archived/Messaging Version/.vs
-/Archived
 /Messaging Version/Gamer.Access.GameDefinition.Interface/bin/Debug/net5.0
 /Messaging Version/Gamer.Access.GameDefinition.Interface/obj/Debug/net5.0
 /Messaging Version/Gamer.Access.GameDefinition.Interface/obj
@@ -89,3 +86,30 @@
 /Messaging Version/Gamer.Manager.Game.Service/bin/Debug/net5.0
 /Messaging Version/Gamer.Manager.Game.Service/obj
 /Messaging Version/Microservice.Game.Content/obj
+/Messaging Version/.vs
+/Stand-Alone Version/.vs/Gamer.DLL Version
+/Messaging Version/packages
+/Service Bus Version/.vs
+/Service Bus Version/packages
+/DLL Version/.vs
+/DLL Version/Gamer.Access.GameDefinition.Interface/obj
+/DLL Version/Gamer.Access.GameDefinition.Service/obj
+/DLL Version/Gamer.Access.GameSession.Interface/obj
+/DLL Version/Gamer.Access.GameSession.Service/obj
+/DLL Version/Gamer.Access.Player.Interface/obj
+/DLL Version/Gamer.Access.Player.Service/obj
+/DLL Version/Gamer.Access.Tile.Interface/obj
+/DLL Version/Gamer.Access.Tile.Service/obj
+/DLL Version/Gamer.Client.ConsoleApp/obj
+/DLL Version/Gamer.Engine.GameBoard.Interface/obj
+/DLL Version/Gamer.Engine.GameBoard.Service/obj
+/DLL Version/Gamer.Engine.GamePlay.Interface/obj
+/DLL Version/Gamer.Engine.GamePlay.Service/obj
+/DLL Version/Gamer.Engine.Validation.Interface/obj
+/DLL Version/Gamer.Engine.Validation.Service/obj
+/DLL Version/Gamer.Framework/obj
+/DLL Version/Gamer.Manager.Game.Interface/obj
+/DLL Version/Gamer.Manager.Game.Service/obj
+/Single Project Version/.vs/Single Project Version
+/Single Project Version/Gamer.ConsoleApp/bin/Debug/net5.0
+/Single Project Version/Gamer.ConsoleApp/obj
