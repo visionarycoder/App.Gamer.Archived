@@ -107,3 +107,21 @@
 /Single Project Version/Gamer.ConsoleApp/bin/Debug/net5.0
 /Single Project Version/Gamer.ConsoleApp/obj/Debug/net5.0
 /Single Project Version/Gamer.ConsoleApp/obj
+/Multi-Project Version/Gamer.Access.GameDefinition.Interface/obj
+/Multi-Project Version/Gamer.Access.GameDefinition.Service/obj
+/Multi-Project Version/Gamer.Access.GameSession.Interface/obj
+/Multi-Project Version/Gamer.Access.GameSession.Service/obj
+/Multi-Project Version/Gamer.Access.Player.Interface/obj
+/Multi-Project Version/Gamer.Access.Player.Service/obj
+/Multi-Project Version/Gamer.Access.Tile.Interface/obj
+/Multi-Project Version/Gamer.Access.Tile.Service/obj
+/Multi-Project Version/Gamer.Client.ConsoleApp/obj
+/Multi-Project Version/Gamer.Engine.GameBoard.Interface/obj
+/Multi-Project Version/Gamer.Engine.GameBoard.Service/obj
+/Multi-Project Version/Gamer.Engine.GamePlay.Interface/obj
+/Multi-Project Version/Gamer.Engine.GamePlay.Service/obj
+/Multi-Project Version/Gamer.Engine.Validation.Interface/obj
+/Multi-Project Version/Gamer.Engine.Validation.Service/obj
+/Multi-Project Version/Gamer.Framework/obj
+/Multi-Project Version/Gamer.Manager.Game.Interface/obj
+/Multi-Project Version/Gamer.Manager.Game.Service/obj
