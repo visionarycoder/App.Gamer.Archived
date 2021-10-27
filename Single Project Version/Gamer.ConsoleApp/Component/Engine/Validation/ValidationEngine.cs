@@ -30,7 +30,7 @@ namespace Gamer.Component.Engine.Validation
 		public async Task<ValidationResult> ValidateGameSession(Guid gameSessionId)
 		{
 
-			var gameSession = await gameSessionAccess.GetGameSession(gameSessionId);
+			var gameSession = await gameSessionAccess.FindGameSession(i => i.Id == gameSessionId);
 			return gameSession == null
 					? new ValidationResult(GameSessionNotFoundError)
 					: ValidationResult.Success;

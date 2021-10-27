@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
+using System.Linq;
 using System.Threading.Tasks;
 using Gamer.Component.Access.GameDefinition;
 using Gamer.Component.Access.GameSession;
@@ -45,8 +46,10 @@ namespace Gamer.Component.Manager.Game
 
 		public async Task<GameDefinition[]> GetGames()
 		{
-			var gameDefinitions = await gameDefinitionAccess.GetGameDefinitions();
+
+			var gameDefinitions = await gameDefinitionAccess.FindGameDefinitions(i => true);
 			return gameDefinitions;
+
 		}
 
 		public async Task<Guid> StartGame(Guid gameDefinitionId, int numberOfPlayers)
@@ -75,8 +78,10 @@ namespace Gamer.Component.Manager.Game
 
 		public async Task<string> GetTurnPrompt(Guid gameSessionId)
 		{
-			var gameSession = await gameSessionAccess.GetGameSession(gameSessionId);
-			var gameDefinition = await gameDefinitionAccess.GetGameDefinition(gameSession.GameDefinitionId);
+			var gameSessions = await gameSessionAccess.FindGameSession(i => i.Id == gameSessionId);
+			var gameSession = gameSessions.First();
+			var gameDefinitions = await gameDefinitionAccess.FindGameDefinitions(i => i.Id == gameSession.GameDefinitionId);
+			var gameDefinition = gameDefinitions.First();
 			return gameDefinition.TurnPrompt;
 		}
 
@@ -98,9 +103,10 @@ namespace Gamer.Component.Manager.Game
 		public async Task<Player> GetCurrentPlayer(Guid gameSessionId)
 		{
 			
-			var gameSession = await gameSessionAccess.GetGameSession(gameSessionId);
-			var player = await playerAccess.GetPlayer(gameSession.CurrentPlayerId);
-			return player;
+			var gameSessions = await gameSessionAccess.FindGameSession(i => i.Id == gameSessionId);
+			var gameSession = gameSessions.First();
+			var players = await playerAccess.FindPlayers(i => i.Id == gameSession.CurrentPlayerId);
+			return players.First();
 
 		}
 
@@ -112,6 +118,12 @@ namespace Gamer.Component.Manager.Game
 
 		}
 
+		public async Task EndGame(Guid gameSessionId)
+		{
+
+			await gamePlayEngine.EndGame(gameSessionId);
+
+		}
 	}
 
 }

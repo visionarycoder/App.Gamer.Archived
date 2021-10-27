@@ -6,10 +6,10 @@ namespace Gamer.Component.Access.GameSession
 	public interface IGameSessionAccess
 	{
 
-		Task<GameSession> CreateGameSession(GameSession gameSession);
+		Task<GameSession> ProvisionGameSession(GameSession gameSession);
 		Task<GameSession> UpdateGameSession(GameSession gameSession);
 		Task<GameSession[]> FindGameSession(Func<GameSession, bool> filter);
-		Task<GameSession> GetGameSession(Guid gameSessionId);
+		Task<bool> RemoveGameSession(GameSession gameSession);
 
 	}
 }

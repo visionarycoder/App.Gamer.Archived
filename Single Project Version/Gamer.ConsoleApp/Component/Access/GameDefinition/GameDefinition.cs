@@ -13,7 +13,6 @@ namespace Gamer.Component.Access.GameDefinition
 		public string TurnPrompt { get; init; }
 		public int MaxNumberOfPlayers { get; init; }
 		public int MinNumberOfPlayers { get; init; }
-		public string[] Tags { get; init; }
 
 	}
 

@@ -27,21 +27,6 @@ namespace Gamer.Component.Access.GameDefinition
 
 		}
 
-		public async Task<GameDefinition[]> GetGameDefinitions()
-		{
-
-			return await Task.FromResult(cache.ToArray());
-
-		}
-
-		public async Task<GameDefinition> GetGameDefinition(Guid gameDefinitionId)
-		{
-
-			var gameDefinition = cache.FirstOrDefault(i => i.Id == gameDefinitionId);
-			return await Task.FromResult(gameDefinition);
-
-		}
-
 		public async Task<GameDefinition[]> FindGameDefinitions(Func<GameDefinition, bool> filter)
 		{
 

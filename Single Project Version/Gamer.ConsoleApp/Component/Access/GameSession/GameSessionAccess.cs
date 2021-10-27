@@ -17,7 +17,7 @@ namespace Gamer.Component.Access.GameSession
 			cache = new HashSet<GameSession>();
 		}
 
-		public async Task<GameSession> CreateGameSession(GameSession gameSession)
+		public async Task<GameSession> ProvisionGameSession(GameSession gameSession)
 		{
 			if(cache.FirstOrDefault(i => i.Id == gameSession.Id) == null)
 				cache.Add(gameSession);
@@ -45,14 +45,14 @@ namespace Gamer.Component.Access.GameSession
 
 		}
 
-		public async Task<GameSession> GetGameSession(Guid gameSessionId)
+		public async Task<bool> RemoveGameSession(GameSession gameSession)
 		{
+			if (!cache.Contains(gameSession)) 
+				return false;
 
-			var gameSession = cache.FirstOrDefault(i => i.Id == gameSessionId);
-			return await Task.FromResult(gameSession);
-
+			cache.Remove(gameSession);
+			return await Task.FromResult(true);
 		}
-
 	}
 
 }

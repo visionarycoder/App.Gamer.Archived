@@ -27,13 +27,10 @@ namespace Gamer.Component.Engine.GameBoard
 		{
 
 			// Board for Tic-Tac-Toe
-			var gameSession = await gameSessionAccess.GetGameSession(gameSessionId);
-			var players = new List<Player>();
-			foreach (var playerId in gameSession.PlayerIds)
-			{
-				var player = await playerAccess.GetPlayer(playerId);
-				players.Add(player);
-			}
+			var gameSessions = await gameSessionAccess.FindGameSession(i => i.Id == gameSessionId);
+			var gameSession = gameSessions.FirstOrDefault();
+
+			var players = await playerAccess.FindPlayers(i => gameSession.PlayerIds.Contains(i.Id));
 
 			var tiles = await tileAccess.FindTiles(gameSessionId);
 

@@ -33,7 +33,7 @@ namespace Gamer.Component.Access.Player
 
 		}
 
-		public async Task<bool> DeletePlayer(Guid playerId)
+		public async Task<bool> RemovePlayer(Guid playerId)
 		{
 
 			var count = cache.RemoveWhere(i => i.Id == playerId);
@@ -53,7 +53,7 @@ namespace Gamer.Component.Access.Player
 
 		}
 
-		public async Task<Player[]> CreatePlayers(Player[] players)
+		public async Task<Player[]> ProvisionPlayers(Player[] players)
 		{
 			
 			var list = new List<Player>();

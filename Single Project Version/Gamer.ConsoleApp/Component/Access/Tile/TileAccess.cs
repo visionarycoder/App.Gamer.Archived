@@ -17,7 +17,7 @@ namespace Gamer.Component.Access.Tile
 			cache = new HashSet<Tile>();
 		}
 
-		public async Task<bool> CreateTiles(Tile[] tiles)
+		public async Task<bool> ProvisionTiles(Tile[] tiles)
 		{
 
 			var result = true;
@@ -46,18 +46,6 @@ namespace Gamer.Component.Access.Tile
 			var count = cache.RemoveWhere(i => i.GameSessionId == gameSessionId);
 			var result = count > 0;
 			return await Task.FromResult(result);
-
-		}
-
-		public async Task<bool> UpdateTiles(Tile[] tiles)
-		{
-
-			var result = true;
-			foreach (var tile in tiles)
-			{
-				result = result && await UpdateTile(tile);
-			}
-			return result;
 
 		}
 

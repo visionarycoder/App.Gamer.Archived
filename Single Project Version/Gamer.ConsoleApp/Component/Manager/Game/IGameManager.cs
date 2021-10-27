@@ -21,6 +21,7 @@ namespace Gamer.Component.Manager.Game
 		Task<string> GetTurnPrompt(Guid gameSessionId);
 		Task<Player> GetCurrentPlayer(Guid gameSessionId);
 		Task<Player> FindWinner(Guid gameSessionId);
+		Task EndGame(Guid gameSessionId);
 	}
 
 }

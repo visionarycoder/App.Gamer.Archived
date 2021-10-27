@@ -13,9 +13,10 @@ namespace Gamer.Component.Engine.GamePlay
 		Task<Player> FindWinner(Guid gameSessionId);
 		Task<bool> IsTileOpen(Guid gameSessionId, string address);
 		Task<GameSession> InitializeGame(Guid gameDefinitionId, int numberOfPlayers);
-		Task IncrementPlayer(Guid gameSessionId);
-		Task AutoPlayTurn(Guid gameSessionId);
-		Task PlayTurn(Guid gameSessionId, Guid playerId, string address);
+		Task<bool> IncrementPlayer(Guid gameSessionId);
+		Task<bool> AutoPlayTurn(Guid gameSessionId);
+		Task<bool> PlayTurn(Guid gameSessionId, Guid playerId, string address);
+		Task<bool> EndGame(Guid gameSessionId);
 
 	}
 

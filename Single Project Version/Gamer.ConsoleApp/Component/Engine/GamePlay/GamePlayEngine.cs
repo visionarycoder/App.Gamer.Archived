@@ -143,7 +143,8 @@ namespace Gamer.Component.Engine.GamePlay
 				playerId = dictionary["A3"].PlayerId;
 			}
 
-			var player = await playerAccess.GetPlayer(playerId);
+			var players = await playerAccess.FindPlayers(i => i.Id == playerId);
+			var player = players.FirstOrDefault();
 			return player;
 
 		}
@@ -167,11 +168,13 @@ namespace Gamer.Component.Engine.GamePlay
 		public async Task<GameSession> InitializeGame(Guid gameDefinitionId, int numberOfPlayers)
 		{
 
-			var gameDefinition = await gameDefinitionAccess.GetGameDefinition(gameDefinitionId);
+			var gameDefinitions = await gameDefinitionAccess.FindGameDefinitions(i => i.Id == gameDefinitionId);
+			var gameDefinition = gameDefinitions.FirstOrDefault();
 			var createdPlayers = await CreatePlayers(numberOfPlayers, gameDefinition);
 			var gameSession = GameSessionFactory.Create(gameDefinitionId, createdPlayers.Select(i => i.Id).ToArray());
-			await gameSessionAccess.CreateGameSession(gameSession);
-			await CreateTicTacToeBoard(gameSession);
+			await gameSessionAccess.ProvisionGameSession(gameSession);
+			var tiles = TicTacToeBoardFactory.Create(gameSession.Id, new[] { "A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3" });
+			await tileAccess.ProvisionTiles(tiles.ToArray());
 			return gameSession;
 
 		}
@@ -190,26 +193,21 @@ namespace Gamer.Component.Engine.GamePlay
 				players.Add(player);
 			}
 			
-			var createdPlayers = await playerAccess.CreatePlayers(players.ToArray());
+			var createdPlayers = await playerAccess.ProvisionPlayers(players.ToArray());
 			return createdPlayers;
 		}
 
-		private async Task CreateTicTacToeBoard(GameSession gameSession)
-		{
-			// Create Game Tiles
-			var tiles = TicTacToeBoardFactory.Create(gameSession.Id, new []{"A1","A2","A3","B1","B2","B3","C1","C2","C3"});
-			await tileAccess.CreateTiles(tiles.ToArray());
-		}
-
-		public async Task IncrementPlayer(Guid gameSessionsId)
+		public async Task<bool> IncrementPlayer(Guid gameSessionId)
 		{
 			
-			var gameSession = await gameSessionAccess.GetGameSession(gameSessionsId);
-			await IncrementPlayer(gameSession);
+			var gameSessions = await gameSessionAccess.FindGameSession(i => i.Id == gameSessionId);
+			var gameSession = gameSessions.FirstOrDefault();
+			var result = await IncrementPlayer(gameSession);
+			return result;
 
 		}
 
-		public async Task IncrementPlayer(GameSession gameSession)
+		public async Task<bool> IncrementPlayer(GameSession gameSession)
 		{
 
 			var playerIds = gameSession.PlayerIds.ToList();
@@ -218,29 +216,33 @@ namespace Gamer.Component.Engine.GamePlay
 				? playerIds[idx]
 				: playerIds[0];
 			gameSession.CurrentPlayerId = nextPlayerId;
-			await gameSessionAccess.UpdateGameSession(gameSession);
+			var result = await gameSessionAccess.UpdateGameSession(gameSession);
+			return result != null;
 
 		}
 
-		public async Task AutoPlayTurn(Guid gameSessionId)
+		public async Task<bool> AutoPlayTurn(Guid gameSessionId)
 		{
 
-			var gameSession = await gameSessionAccess.GetGameSession(gameSessionId);
-			var currentPlayer = await playerAccess.GetPlayer(gameSession.CurrentPlayerId);
+			var gameSessions = await gameSessionAccess.FindGameSession(i => i.Id == gameSessionId);
+			var gameSession = gameSessions.FirstOrDefault();
+			var currentPlayers = await playerAccess.FindPlayers(i => i.Id == gameSession.CurrentPlayerId);
+			var currentPlayer = currentPlayers.FirstOrDefault();
 			var tiles = await tileAccess.FindTiles(gameSessionId);
 			var tile = autoPlayer.PlayTurn(tiles);
 			tile.PlayerId = currentPlayer.Id;
-			await tileAccess.UpdateTile(tile);
-			await IncrementPlayer(gameSessionId);
+			var result = await tileAccess.UpdateTile(tile);
+			result =  result && await IncrementPlayer(gameSessionId);
+			return result;
 
 		}
 
-		public async Task PlayTurn(Guid gameSessionId, Guid playerId, string address)
+		public async Task<bool> PlayTurn(Guid gameSessionId, Guid playerId, string address)
 		{
 
 			// This should throw an error
 			if (string.IsNullOrWhiteSpace(address))
-				return;
+				return false;
 
 			address = address.ToUpperInvariant();
 			var tiles = await tileAccess.FindTiles(gameSessionId);
@@ -248,13 +250,22 @@ namespace Gamer.Component.Engine.GamePlay
 			if (tile == null)
 			{
 				Trace.WriteLine("Error!");
-				return;
+				return false;
 			}
 			tile.PlayerId = playerId;
-			await tileAccess.UpdateTile(tile);
-			await IncrementPlayer(gameSessionId);
+			var result = await tileAccess.UpdateTile(tile);
+			result = result && await IncrementPlayer(gameSessionId);
+			return result;
 
 
+		}
+
+		public async Task<bool> EndGame(Guid gameSessionId)
+		{
+			var gameSessions = await gameSessionAccess.FindGameSession(i => i.Id == gameSessionId);
+			var gameSession = gameSessions.FirstOrDefault();
+			var result = await gameSessionAccess.RemoveGameSession(gameSession);
+			return result;
 		}
 
 	}
