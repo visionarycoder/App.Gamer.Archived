@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -32,19 +33,30 @@ namespace Gamer.Component.Access.Tile
 
 		}
 
-		public async Task<Tile[]> FindTiles(Guid gameSessionId)
+		public async Task<Tile[]> FindTiles(Func<Tile,bool> filter)
 		{
 
-			var tiles = cache.Where(i => i.GameSessionId == gameSessionId).ToArray();
+			var tiles = filter != null
+				? cache.Where(filter).ToArray()
+				: cache.ToArray();
 			return await Task.FromResult(tiles);
 
 		}
 
-		public async Task<bool> RemoveTiles(Guid gameSessionId)
+		public async Task<bool> RemoveTiles(Func<Tile,bool> filter)
 		{
 
-			var count = cache.RemoveWhere(i => i.GameSessionId == gameSessionId);
-			var result = count > 0;
+			Contract.Assert(filter != null, "Input filter cannot be null");
+			var tiles = await FindTiles(filter);
+			var count = 0;
+			foreach(var tile in tiles)
+			{
+				var success = cache.Remove(tile);
+				if (success)
+					count++;
+
+			}
+			var result = count == tiles.Length;
 			return await Task.FromResult(result);
 
 		}

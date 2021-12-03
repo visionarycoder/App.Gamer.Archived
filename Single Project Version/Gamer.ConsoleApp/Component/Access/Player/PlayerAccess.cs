@@ -7,64 +7,64 @@ using System.Threading.Tasks;
 namespace Gamer.Component.Access.Player
 {
 
-	public class PlayerAccess : IPlayerAccess
-	{
+    public class PlayerAccess : IPlayerAccess
+    {
 
-		private static readonly HashSet<Player> cache;
+        private static readonly HashSet<Player> cache;
 
-		static PlayerAccess()
-		{
-			cache = new HashSet<Player>();
-		}
+        static PlayerAccess()
+        {
+            cache = new HashSet<Player>();
+        }
 
-		public async Task<Player> GetPlayer(Guid playerId)
-		{
+        public async Task<Player> GetPlayer(Guid playerId)
+        {
 
-			var player = cache.FirstOrDefault(i => i.Id == playerId);
-			return await Task.FromResult(player);
+            var player = cache.FirstOrDefault(i => i.Id == playerId);
+            return await Task.FromResult(player);
 
-		}
+        }
 
-		public async Task<Player[]> FindPlayers(Func<Player, bool> filter)
-		{
+        public async Task<Player[]> FindPlayers(Func<Player, bool> filter)
+        {
 
-			var players = cache.Where(filter).ToArray();
-			return await Task.FromResult(players);
+            var players = cache.Where(filter).ToArray();
+            return await Task.FromResult(players);
 
-		}
+        }
 
-		public async Task<bool> RemovePlayer(Guid playerId)
-		{
+        public async Task<bool> RemovePlayer(Guid playerId)
+        {
 
-			var count = cache.RemoveWhere(i => i.Id == playerId);
-			return await Task.FromResult(count > 0);
+            var count = cache.RemoveWhere(i => i.Id == playerId);
+            return await Task.FromResult(count > 0);
 
-		}
+        }
 
-		public async Task<Player> CreatePlayer(Player player)
-		{
+        public async Task<Player> CreatePlayer(Player player)
+        {
 
-			if (cache.FirstOrDefault(i => i.Id == player.Id) == null)
-			{
-				cache.Add(player);
-				Trace.WriteLine($"Adding player: {player.Id} / {player.Name} / {player.IsMachine} / {player.GamePiece}");
-			}
-			return await Task.FromResult(player);
+            if (cache.FirstOrDefault(i => i.Id == player.Id) == null)
+            {
+                cache.Add(player);
+                Trace.WriteLine($"Adding player: {player.Id} / {player.Name} / {player.IsMachine} / {player.GamePiece}");
+            }
+            return await Task.FromResult(player);
 
-		}
+        }
 
-		public async Task<Player[]> ProvisionPlayers(Player[] players)
-		{
-			
-			var list = new List<Player>();
-			foreach (var player in players)
-			{
-				list.Add(await CreatePlayer(player));
-			}
-			return list.ToArray();
+        public async Task<Player[]> CreatePlayers(Player[] players)
+        {
 
-		}
+            var list = new List<Player>();
+            foreach (var player in players)
+            {
+                list.Add(await CreatePlayer(player));
+            }
+            return list.ToArray();
 
-	}
+        }
+
+    }
 
 }

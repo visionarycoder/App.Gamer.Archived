@@ -8,8 +8,8 @@ namespace Gamer.Component.Access.Tile
 	{
 
 		Task<bool> ProvisionTiles(Tile[] tiles);
-		Task<Tile[]> FindTiles(Guid gameSessionId);
-		Task<bool> RemoveTiles(Guid gameSessionId);
+		Task<Tile[]> FindTiles(Func<Tile,bool> filter);
+		Task<bool> RemoveTiles(Func<Tile, bool> filter);
 		Task<bool> UpdateTile(Tile tile);
 
 	}

@@ -30,7 +30,7 @@ namespace Gamer.Component.Engine.Validation
 		public async Task<ValidationResult> ValidateGameSession(Guid gameSessionId)
 		{
 
-			var gameSession = await gameSessionAccess.FindGameSession(i => i.Id == gameSessionId);
+			var gameSession = await gameSessionAccess.FindGameSessions(i => i.Id == gameSessionId);
 			return gameSession == null
 					? new ValidationResult(GameSessionNotFoundError)
 					: ValidationResult.Success;
@@ -45,7 +45,7 @@ namespace Gamer.Component.Engine.Validation
 				return await Task.FromResult(new ValidationResult(NoInputFoundError));
 			}
 
-			var tiles = await tileAccess.FindTiles(gameSessionId);
+			var tiles = await tileAccess.FindTiles(i => i.Id == gameSessionId);
 			var targetTile = tiles.FirstOrDefault(i => i.Address == cleaned);
 			if (targetTile == null)
 			{

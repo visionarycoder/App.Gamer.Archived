@@ -4,9 +4,8 @@ using System.Data;
 using System.Threading.Tasks;
 using Gamer.Component.Access.GameDefinition;
 using Gamer.Component.Manager.Game;
-using Gamer.Framework;
 
-namespace Gamer
+namespace Gamer.Client
 {
 
 	public class ConsoleClient

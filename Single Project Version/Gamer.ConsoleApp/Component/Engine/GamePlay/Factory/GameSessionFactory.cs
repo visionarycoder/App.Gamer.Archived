@@ -2,7 +2,7 @@
 using System.Linq;
 using Gamer.Component.Access.GameSession;
 
-namespace Gamer.Component.Engine.GamePlay
+namespace Gamer.Component.Engine.GamePlay.Factory
 {
 
 	public static class GameSessionFactory

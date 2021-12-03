@@ -2,7 +2,7 @@
 using System.Linq;
 using Gamer.Component.Access.Tile;
 
-namespace Gamer.Component.Engine.GamePlay
+namespace Gamer.Component.Engine.GamePlay.Helpers
 {
 
 	internal class AutoPlayer

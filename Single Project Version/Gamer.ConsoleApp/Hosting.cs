@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Gamer.Client;
 using Gamer.Component.Access.GameDefinition;
 using Gamer.Component.Access.GameSession;
 using Gamer.Component.Access.Player;

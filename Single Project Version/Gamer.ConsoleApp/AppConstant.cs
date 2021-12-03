@@ -1,4 +1,4 @@
-﻿namespace Gamer.Framework
+﻿namespace Gamer
 {
 	
 	public static class AppConstant

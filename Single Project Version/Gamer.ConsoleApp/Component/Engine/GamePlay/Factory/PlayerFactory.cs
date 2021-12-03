@@ -1,7 +1,7 @@
 ﻿using System;
 using Gamer.Component.Access.Player;
 
-namespace Gamer.Component.Engine.GamePlay
+namespace Gamer.Component.Engine.GamePlay.Factory
 {
 
 	public static class PlayerFactory

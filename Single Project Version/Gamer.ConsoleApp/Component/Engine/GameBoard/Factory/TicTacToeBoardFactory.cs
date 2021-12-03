@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Gamer.Component.Access.Tile;
 
-namespace Gamer.Component.Engine.GameBoard
+namespace Gamer.Component.Engine.GameBoard.Factory
 {
 	
 	public static class TicTacToeBoardFactory

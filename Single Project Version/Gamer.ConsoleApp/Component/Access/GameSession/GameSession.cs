@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Gamer.Component.Access.GameSession
 {
@@ -13,4 +14,12 @@ namespace Gamer.Component.Access.GameSession
 
 	}
 
+    public class GameSessionCriteria
+    {
+		public Guid? Id { get; set; }
+        public bool ById => Id != null;
+
+        public Guid?[] PlayerIds { get; set; }
+        public bool ByPlayerIds => PlayerIds != null && PlayerIds.Any();
+    }
 }
