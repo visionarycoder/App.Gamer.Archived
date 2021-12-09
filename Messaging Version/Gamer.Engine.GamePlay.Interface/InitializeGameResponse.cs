@@ -1,4 +1,4 @@
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 
 namespace Gamer.Engine.GamePlay.Interface
 {

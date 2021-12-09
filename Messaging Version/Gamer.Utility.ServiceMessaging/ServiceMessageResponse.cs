@@ -1,4 +1,4 @@
-﻿namespace Gamer.Framework.ServiceMessaging
+﻿namespace Gamer.Utility.ServiceMessaging
 {
 
     public abstract class ServiceMessageResponse : ServiceMessageRequest, IServiceMessageResponse

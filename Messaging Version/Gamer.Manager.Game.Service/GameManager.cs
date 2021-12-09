@@ -8,7 +8,7 @@ using Gamer.Engine.GameBoard.Interface;
 using Gamer.Engine.GamePlay.Interface;
 using Gamer.Engine.Validation.Interface;
 using Gamer.Framework;
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 using Gamer.Manager.Game.Interface;
 using Gamer.Manager.Game.Service.Helpers;
 

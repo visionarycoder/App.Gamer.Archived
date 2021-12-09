@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -11,6 +11,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Gamer.Access.Player.Interface\Gamer.Access.Player.Interface.csproj" />
+    <ProjectReference Include="..\Gamer.Framework\Gamer.Framework.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.Logging\Gamer.Utility.Logging.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.ServiceMessaging\Gamer.Utility.ServiceMessaging.csproj" />
   </ItemGroup>
 
 </Project>

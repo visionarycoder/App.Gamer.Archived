@@ -1,5 +1,5 @@
 ﻿using System.Data;
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 
 namespace Gamer.Engine.GameBoard.Interface
 {

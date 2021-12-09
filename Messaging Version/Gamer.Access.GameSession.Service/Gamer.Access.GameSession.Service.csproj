@@ -11,6 +11,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Gamer.Access.GameSession.Interface\Gamer.Access.GameSession.Interface.csproj" />
+    <ProjectReference Include="..\Gamer.Framework\Gamer.Framework.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.Logging\Gamer.Utility.Logging.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.ServiceMessaging\Gamer.Utility.ServiceMessaging.csproj" />
   </ItemGroup>
 
 </Project>

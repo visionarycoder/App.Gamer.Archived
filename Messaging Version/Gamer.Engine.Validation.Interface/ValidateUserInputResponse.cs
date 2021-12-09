@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 
 namespace Gamer.Engine.Validation.Interface
 {

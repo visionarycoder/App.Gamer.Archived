@@ -11,7 +11,7 @@ using Gamer.Engine.GamePlay.Interface;
 using Gamer.Engine.GamePlay.Service.Factory;
 using Gamer.Engine.GamePlay.Service.Helper;
 using Gamer.Framework;
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 
 using Microsoft.Extensions.Logging;
 

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Microservice.Game.Content
+﻿namespace Gamer.Microservice.Game.Content
 {
 
 	class Hosting
