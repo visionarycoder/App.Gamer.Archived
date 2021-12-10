@@ -1,5 +1,5 @@
 ﻿using System;
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 
 namespace Gamer.Access.GameSession.Interface
 {

@@ -14,6 +14,9 @@
     <ProjectReference Include="..\Gamer.Access.Player.Interface\Gamer.Access.Player.Interface.csproj" />
     <ProjectReference Include="..\Gamer.Access.Tile.Interface\Gamer.Access.Tile.Interface.csproj" />
     <ProjectReference Include="..\Gamer.Engine.GameBoard.Interface\Gamer.Engine.GameBoard.Interface.csproj" />
+    <ProjectReference Include="..\Gamer.Framework\Gamer.Framework.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.Logging\Gamer.Utility.Logging.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.ServiceMessaging\Gamer.Utility.ServiceMessaging.csproj" />
   </ItemGroup>
 
 </Project>

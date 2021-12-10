@@ -1,9 +1,9 @@
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 
 namespace Gamer.Manager.Game.Interface
 {
-	public class ApplyTurnResponse : ServiceMessageResponse
-	{
-		public string Prompt { get; set; }
-	}
+    public class ApplyTurnResponse : ServiceMessageResponse
+    {
+        public string Prompt { get; set; }
+    }
 }

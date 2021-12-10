@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Gamer.Framework\Gamer.Framework.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.ServiceMessaging\Gamer.Utility.ServiceMessaging.csproj" />
   </ItemGroup>
 
 </Project>

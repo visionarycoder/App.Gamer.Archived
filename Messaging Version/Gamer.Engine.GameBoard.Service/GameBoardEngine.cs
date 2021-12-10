@@ -8,7 +8,7 @@ using Gamer.Access.Player.Interface;
 using Gamer.Access.Tile.Interface;
 using Gamer.Engine.GameBoard.Interface;
 using Gamer.Framework;
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 using Microsoft.Extensions.Logging;
 
 namespace Gamer.Engine.GameBoard.Service

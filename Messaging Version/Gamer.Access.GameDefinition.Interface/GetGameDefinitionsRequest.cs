@@ -1,9 +1,9 @@
-﻿using Gamer.Framework.ServiceMessaging;
+﻿using Gamer.Utility.ServiceMessaging;
 
 namespace Gamer.Access.GameDefinition.Interface
 {
-	public class GetGameDefinitionsRequest : ServiceMessageRequest
-	{
+    public class GetGameDefinitionsRequest : ServiceMessageRequest
+    {
 
-	}
+    }
 }

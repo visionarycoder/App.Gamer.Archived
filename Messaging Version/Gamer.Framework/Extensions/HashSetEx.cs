@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 
-namespace Gamer.Framework.Helpers
+namespace Gamer.Framework.Extensions
 {
 
 	public static class HashSetEx

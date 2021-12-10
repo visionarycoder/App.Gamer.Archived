@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 using Gamer.Access.GameSession.Interface;
 using Gamer.Framework;
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 
 using Microsoft.Extensions.Logging;
 

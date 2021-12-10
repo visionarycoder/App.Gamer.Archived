@@ -19,6 +19,8 @@
     <ProjectReference Include="..\Gamer.Engine.Validation.Interface\Gamer.Engine.Validation.Interface.csproj" />
     <ProjectReference Include="..\Gamer.Framework\Gamer.Framework.csproj" />
     <ProjectReference Include="..\Gamer.Manager.Game.Interface\Gamer.Manager.Game.Interface.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.Logging\Gamer.Utility.Logging.csproj" />
+    <ProjectReference Include="..\Gamer.Utility.ServiceMessaging\Gamer.Utility.ServiceMessaging.csproj" />
   </ItemGroup>
 
 </Project>

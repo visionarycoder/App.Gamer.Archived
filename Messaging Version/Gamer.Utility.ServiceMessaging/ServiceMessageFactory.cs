@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Gamer.Framework.ServiceMessaging
+namespace Gamer.Utility.ServiceMessaging
 {
   
     public static class ServiceMessageFactory<T> where T : IServiceMessage, new()

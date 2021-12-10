@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Gamer.Access.GameDefinition.Interface;
 using Gamer.Access.GameDefinition.Service.Factory;
 using Gamer.Framework;
-using Gamer.Framework.ServiceMessaging;
+using Gamer.Utility.ServiceMessaging;
 using Microsoft.Extensions.Logging;
 
 namespace Gamer.Access.GameDefinition.Service
