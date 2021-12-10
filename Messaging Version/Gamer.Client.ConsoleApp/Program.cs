@@ -17,6 +17,8 @@ using Gamer.Manager.Game.Interface;
 using Gamer.Manager.Game.Service;
 using Gamer.Utility.Logging;
 
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 using System;
@@ -34,19 +36,29 @@ namespace Gamer.Client.ConsoleApp
 
             Console.WriteLine(AppConstant.ApplicationName);
 
+            var host = Host
+                .CreateDefaultBuilder(args)
+                .ConfigureServices((_, services) =>
+                    {
 
-            container.RegisterType<ILogger, CustomLogger>();
-            container.RegisterType<IGameDefinitionAccess, GameDefinitionAccess>();
-            container.RegisterType<IGameSessionAccess, GameSessionAccess>();
-            container.RegisterType<IPlayerAccess, PlayerAccess>();
-            container.RegisterType<ITileAccess, TileAccess>();
-            container.RegisterType<IGameBoardEngine, GameBoardEngine>();
-            container.RegisterType<IGamePlayEngine, GamePlayEngine>();
-            container.RegisterType<IValidationEngine, ValidationEngine>();
+                        services
+                            .AddSingleton(typeof(ILogger), typeof(CustomLogger))
 
-            container.RegisterType<IGameManager, GameManager>();
+                            .AddSingleton(typeof(IGameDefinitionAccess), typeof(GameDefinitionAccess))
+                            .AddSingleton(typeof(IGameSessionAccess), typeof(GameSessionAccess))
+                            .AddSingleton(typeof(IPlayerAccess), typeof(PlayerAccess))
+                            .AddSingleton(typeof(ITileAccess), typeof(TileAccess))
 
-            var gameManager = container.Resolve<IGameManager>();
+                            .AddSingleton(typeof(IGameBoardEngine), typeof(GameBoardEngine))
+                            .AddSingleton(typeof(IGamePlayEngine), typeof(GamePlayEngine))
+                            .AddSingleton(typeof(IValidationEngine), typeof(ValidationEngine))
+
+                            .AddSingleton(typeof(IGameManager), typeof(GameManager));
+
+                    })
+                .Build();
+
+            var gameManager = host.Services.GetService<IGameManager>();
             var client = new ConsoleClient(gameManager);
             await client.Run();
 
