@@ -33,32 +33,20 @@ namespace VisionaryCoder.Resource.Data.GamerDb;
 public class GamerDbInitializer
 {
 
-    public static void Initialize(GamerDb.GamerContext context)
+    private readonly GamerContext context;
+
+    public GamerDbInitializer(GamerContext context)
+    {
+        this.context = context;
+    }
+
+    public void Initialize()
     {
         context.Database.EnsureCreated();
     }
 
-    public static void SeedGameTypes(GamerDb.GamerContext context)
+    public void Seed()
     {
-
-        var gameSeeds = new Dictionary<string, List<string>>
-        {
-            //("Games for two.", new List<string>{ "All Fours", "Backgammon"})
-            //"Games for three.",
-            //"Games for four and partnership games."
-            //"Fun and Family"
-        };
-
-        //foreach (var name in names)
-        //{
-        //    var entity = new GamerDb.Models.GameType
-        //    {
-        //        Name = name,
-        //    };
-        //    context.GameTypes.Add(entity);
-        //}
-        //context.SaveChanges();
-
 
     }
 
