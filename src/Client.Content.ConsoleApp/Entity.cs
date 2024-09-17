@@ -1,7 +1,9 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Client.Content.ConsoleApp
 {
-    public abstract class BaseEntity
+    public abstract class Entity
     {
-        public int Id { get; set; }
+        [Required, Key] public int Id { get; set; }
     }
 }

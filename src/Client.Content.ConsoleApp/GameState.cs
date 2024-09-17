@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Client.Content.ConsoleApp
 {
 
-    public class GameState : BaseEntity
+    public class GameState : Entity
     {
         public char[] Board { get; set; }
         public int CurrentPlayerIndex { get; set; }

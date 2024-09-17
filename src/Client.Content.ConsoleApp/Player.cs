@@ -1,6 +1,6 @@
 namespace Client.Content.ConsoleApp
 {
-    public class Player : BaseEntity
+    public class Player : Entity
     {
         public string Name { get; set; }
         public char Symbol { get; set; }
