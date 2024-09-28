@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "Manager.Content.Service": {
-      "commandName": "Project",
-      "commandLineArgs": "--port 7142",
-      "launchBrowser": false
-    }
-  }
-}

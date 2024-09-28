@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "Access.Games.Service": {
-      "commandName": "Project",
-      "commandLineArgs": "--port 7245",
-      "launchBrowser": false
-    }
-  }
-}
